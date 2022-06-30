@@ -3,9 +3,10 @@
         <h1>Get your best deal</h1>
         <div id="vash">
             <p id="mont">Monthly</p>
-            <img src="@/assets/toggle.svg" alt="">
+            <img src="@/assets/toggle.svg" alt="" id="nunu">
+            <img src="@/assets/toggle-mob.svg" alt="" id="nini">
             <p id="yea">Yearly</p>
-            <img src="@/assets/word.svg" alt="">
+            <img src="@/assets/word.svg" alt="" id="fav">
         </div>
         <div id="cards">
             <div v-for="tot in totem" :key="tot.id" :id="tot.min" class="pop">
@@ -155,7 +156,6 @@ h1 {
 #cards {
     display: flex;
     gap: 40px;
-    flex-wrap: wrap;
 
 }
 
@@ -181,6 +181,7 @@ h1 {
 
 li {
     padding-bottom: 24px;
+
 }
 
 ul {
@@ -189,5 +190,95 @@ ul {
 
 ul li:before {
     content: '✓  ';
+}
+
+#nini {
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .pop {
+        width: 339px;
+        height: 602px;
+        padding: 30px 30px 24px 30px;
+    }
+
+    #uni {
+        padding: 80px 18px;
+    }
+
+    #cards {
+        flex-wrap: wrap;
+
+    }
+
+    h1 {
+        width: 339px;
+        height: 43px;
+        font-style: normal;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 43px;
+    }
+
+    #mont {
+        width: 71px;
+        height: 22px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    #nini {
+        display: block;
+    }
+
+    #nunu,
+    #fav {
+        display: none;
+    }
+
+    #yea {
+        width: 54px;
+        height: 22px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    #popo {
+        width: 121px;
+        height: 32px;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 100%;
+    }
+
+    #momo {
+        width: 260px;
+        height: 18px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    h2 {
+        height: 60px;
+        font-weight: 400;
+        font-size: 60px;
+        line-height: 100%;
+    }
+
+    #hun {
+        width: 58px;
+        height: 18px;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    #ion {
+        padding-bottom: 24px;
+    }
 }
 </style>

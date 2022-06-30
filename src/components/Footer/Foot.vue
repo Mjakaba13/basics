@@ -58,4 +58,24 @@ li a {
     text-align: center;
     color: #000000;
 }
+
+@media screen and (max-width: 375px) {
+    #bore {
+        padding: 0;
+    }
+
+    #dance {
+        flex-direction: column;
+    }
+
+    #limp {
+        flex-direction: column;
+        align-items: center;
+        padding: 98px 0 80px 0;
+    }
+
+    img {
+        padding-top: 62px;
+    }
+}
 </style>

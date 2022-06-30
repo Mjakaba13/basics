@@ -76,6 +76,7 @@ export default {
     line-height: 140%;
     text-align: center;
     color: #FFFFFF;
+    border: none;
     margin-top: 112px;
 }
 
@@ -84,6 +85,11 @@ export default {
         padding: 12px 24px;
         width: 139px;
         height: 44px;
+    }
+
+    #but4 {
+        width: 278px;
+        height: 54px;
     }
 }
 </style>
