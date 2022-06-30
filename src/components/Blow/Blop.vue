@@ -57,7 +57,7 @@ export default {
     display: flex;
     gap: 24px;
     margin-top: 80px;
-
+    overflow: hidden;
 }
 
 h1 {
@@ -110,8 +110,6 @@ h1 {
         padding: 80px 18px;
     }
 
-    #poco {
-        flex-shrink: 1;
-    }
+
 }
 </style>
